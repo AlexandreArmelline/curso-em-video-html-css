@@ -62,12 +62,15 @@ section{
 section.imagem{
     background-color: rgba(0, 0, 0, 0.363);
     color: white;
-
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.562) ;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.normal{
     background-color: white;
     color: black;
+   
 
 }
 
@@ -76,6 +79,26 @@ section.imagem > p{
     background-color: rgba(0, 0, 0, 0.342);
     padding: 10px;
 }
+
+section#img1{
+    background-image: url(Bezerro\ nasc.jpg);
+    background-position: right, center;
+    background-repeat: no-repeat;
+    
+
+}
+
+section#img2{
+    background-image: url(Bezerro\ e\ vaca.jpg);
+    background-position: left, top;
+
+}
+
+section#img3{
+    background-image: url(Bezerro\ e\ vaca2.jpg);
+    background-position: left, top;
+}
+
 footer{
     background-color: black;
     padding: 10px;
