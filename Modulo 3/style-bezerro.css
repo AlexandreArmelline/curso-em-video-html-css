@@ -17,14 +17,14 @@
 
 html, body{
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: rgb(255, 255, 255);
     font-family: var(--fonte1);
    
 
 }
 
 header{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
     
@@ -68,7 +68,7 @@ section.imagem{
 }
 
 section.normal{
-    background-color: white;
+    background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 238, 255, 0.418));
     color: black;
    
 
