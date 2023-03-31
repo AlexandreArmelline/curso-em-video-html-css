@@ -9,18 +9,32 @@
         iframe{
             width: 600px;
             height: 300px;
+            border: 2px solid black;
         }
+
+      
     </style>
 </head>
 <body>
     <h1>Testando o uso de um Iframe</h1>
 
-    <p>Lorem ipsum, dolor sit amet <iframe src="https://www.estudonauta.com/" frameborder="0"><a href="https://www.estudonauta.com/" target="_blank">Curso em Video</a></iframe> consectetur adipisicing elit. Eum iste officia repellendus temporibus, aspernatur culpa iure 
+      <p>Lorem ipsum, dolor sit amet <iframe src="https://www.estudonauta.com/" frameborder="0"><a href="https://www.estudonauta.com/" target="_blank">Curso em Video</a></iframe> consectetur adipisicing elit. Eum iste officia repellendus temporibus, aspernatur culpa iure 
     </p>
     <!--Iframe pode não funcionar em alguns dispositivos, então é interessante add um linke com a url da pagina com opção como no exemplo acima -->
+<br><br><br>
+
+    <h1>Navegação no Iframe</h1>
 
 
-
+    <ul>
+        <li><a href="../Modulo 2/Desafios/index.html" target="chuchu">Desafio Android</a></li>
+        <li><a href="../Modulo 3/desafio12_cordel.html" target="chuchu">Desafio cordel</a></li>
+        <li><a href="https://www.estudonauta.com/" target="chuchu">Estudonauta</a></li>
+    </ul>
+    <img src="">
+<iframe name="chuchu" srcdoc="<h1>Escolha uma opção acima</h1><img src='Vegan_P.jpg'>"></iframe>
+<!--Essa tecnica só funciona com o parametro 'name' q sera usado no parametro 'target'-->
+<!--srcdoc dentro do Iframe permite o uso de html dentro do Iframe-->
 
     
 </body>
