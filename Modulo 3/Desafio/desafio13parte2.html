@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 13</title>
+</head>
+<style>
+    caption{
+        font-size: 1.7em;
+        background-color: aquamarine;
+        border-radius: 10px 10px 0px 0px;
+    }
+    table{
+        border-collapse: collapse;
+        
+    }
+
+    td, th{
+        border: 1px solid black;
+        text-align: center;
+        vertical-align: middle;
+        padding: 4px 10px;
+    }
+
+    .destaque{
+        background-color: rgb(221, 199, 241);
+    }
+    
+    .Diciplinas{
+        background-color: chartreuse;
+    }
+
+    .Notas{
+        background-color: rgb(161, 81, 201); 
+    }
+
+    .Média{
+        background-color: blue;
+    }
+
+    .chuchu{
+        overflow-x: auto;
+    }
+
+   
+</style>
+<body>
+    <h1>Exercicios com Tabel</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nemo reprehenderit, exercitationem quisquam pariatur mollitia, eius eligendi sunt, nostrum impedit esse aspernatur repellendus obcaecati in quod nobis omnis! Sed, illo.</p>
+
+    <div class="chuchu">
+        <table>
+            <!--Este metodo para selecionar colonas considera a posição da coluna e não o valor digitado dentro do TH -->
+            <colgroup>
+                <col class="Área">
+                <col class="Diciplinas">
+                <col class="Notas" span="10">
+                <col class="Média">
+            </colgroup>
+            <caption>Boletim Escolar</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2" class="destaque" scope="col">Área</th>
+                    <th rowspan="2" class="destaque" scope="col">Diciplinas</th>
+                    <th colspan="10" class="destaque" scope="colgroup">Notas</th>
+                    <th rowspan="2" class="destaque" scope="col">Média</th>
+                   </tr>
+        
+                   <tr>
+                    <th class="destaque" scope="col">Nota 1</th>
+                    <th class="destaque" scope="col">Nota 2</th>
+                    <th class="destaque" scope="col">Nota 3</th>
+                    <th class="destaque" scope="col">Nota 4</th>
+                    <th class="destaque" scope="col">Nota 5</th>
+                    <th class="destaque" scope="col">Nota 6</th>
+                    <th class="destaque" scope="col">Nota 7</th>
+                    <th class="destaque" scope="col">Nota 8</th>
+                    <th class="destaque" scope="col">Nota 9</th>
+                    <th class="destaque" scope="col">Nota 10</th>
+                   </tr>
+            </thead>
+        
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">Exatas</th>
+                    <td>Matemática</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+        
+                </tr>
+        
+                <tr>
+                    <td>Física</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+        
+                <tr>
+                    <td>Química</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                   </tr>
+        
+                <tr>
+                    <td>Biologia</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+        
+                <tr>
+                    <th colspan="12" class="destaque" scope="row">Médias de exatas</th>
+                    <td class="destaque">0</td>
+                </tr>
+        
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Humanas</th>
+                    <td>História</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+        
+                <tr>
+                    <td>Gegrafia</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+        
+                <tr>
+                    <th colspan="12" class="destaque" scope="row">Médias de humanas</th>
+                    <td class="destaque">0</td>
+                </tr>
+            </tbody>
+        
+        </table>
+    </div>
+   
+</body>
+</html>
