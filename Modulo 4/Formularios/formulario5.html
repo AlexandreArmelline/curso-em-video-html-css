@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulário 5</title>
+</head>
+<body>
+    <h1>Fomulário 5</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="masc" value="M">
+            <label for="masc">Maculino</label>
+            <input type="radio" name="sexo" id="fem" value="F" checked>
+            <label for="fem">Feminino</label>
+
+            <!--P q a seleção desse campo funcione corretamente e necessario q todos os parametros "name" tenham o mesmo valor.
+            Os campos marcados com "checked" iniciam preenchidos-->
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="bas" id="ibas" checked>
+            <label for="ibas">Basquete</label><br>
+            <input type="checkbox" name="fut" id="ifut" checked>
+            <label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="nat" id="inat">
+            <label for="inat">Natação</label><br>
+            <input type="checkbox" name="tenis" id="itenis">
+            <label for="itenis">Tênis</label>
+
+            <!--Os campos marcados com "checked" iniciam preenchidos-->
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+    
+</body>
+</html>
